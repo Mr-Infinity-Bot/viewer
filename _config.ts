@@ -5,6 +5,7 @@ import codeHighlight from "https://deno.land/x/lume@v1.7.3/plugins/code_highligh
 import resolveUrls from "https://deno.land/x/lume@v1.7.3/plugins/resolve_urls.ts";
 import esbuild from "https://deno.land/x/lume@v1.7.3/plugins/esbuild.ts";
 import date from "https://deno.land/x/lume@v1.7.3/plugins/date.ts";
+import basePath from "https://deno.land/x/lume@v1.7.3/plugins/base_path.ts";
 
 const site = lume(
   {
@@ -17,6 +18,7 @@ site
   .ignore("README.md")
   .copy("static", ".")
   .loadAssets([".ts"])
+  .use(basePath())
   .use(resolveUrls())
   .use(codeHighlight())
   .use(postcss())
