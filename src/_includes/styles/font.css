@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Ginto Nord';
+    src: url('/fonts/ginto-nord.woff2') format('woff2'), url('/fonts/ginto-nord.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ginto Normal';
+    src: url('/fonts/ginto-normal.woff2') format('woff2'), url('/fonts/ginto-normal.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+html, body {
+    background-color: #23272a;
+}
+
+h1 {
+    font-family: 'Ginto Nord';
+    color: #e3e5e8;
+}
+
+p {
+    font-family: 'Ginto Normal';
+    color: #a0a1a3
+}
