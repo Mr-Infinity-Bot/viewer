@@ -9,6 +9,7 @@ import date from "https://deno.land/x/lume@v1.7.3/plugins/date.ts";
 const site = lume(
   {
     src: "./src",
+    location: new URL("https://mr-infinity-bot.github.io/viewer/"), 
   },
 );
 
